@@ -14,7 +14,7 @@ customersRouter.get("/", async (_request, response) => {
 
 customersRouter.post("/", async (request, response) => {
   const { firstName, lastName, email, address } = request.body;
-  console.log(request.body);
+  console.log(reques1t.body);
   try {
     await sql`INSERT INTO customers (firstName, lastName, email, address)
             VALUES (${firstName}, ${lastName}, ${email}, ${address})`;
